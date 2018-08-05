@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/main.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Board</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+
+		<h1 th:text="${boardName}">School Board Page</h1>
+
+		<br>
+
+		<h3>Content:</h3>
+        <span th:text="${boardContent}">Content Goes Here</span>
+    </div>
+
+</div>
+
+</body>
+</html>
